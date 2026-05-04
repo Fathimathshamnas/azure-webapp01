@@ -17,7 +17,7 @@ conn_str=(
     'Driver={ODBC Driver 18 for SQL Server};'
     'Server=python-webapp-sqlserver.database.windows.net;'
     'Database=appdb;'
-    'Uid=Dbserver123;Pwd=Dbserver@123';
+    'Uid=Dbserver123;Pwd=Dbserver@123;'
 )
 conn_str=pyodbc.connect(conn_str)
 
