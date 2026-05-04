@@ -12,3 +12,14 @@ def health():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8000)
+import pyodbc
+conn_str=(
+    'Driver={ODBC Driver 18 for SQL Server};'
+    'Server=python-webapp-sqlserver.database.windows.net;'
+    'Database=appdb;'
+    'Uid=Dbserver123;Pwd=Dbserver@123';
+)
+conn_str=pyodbc.connect(conn_str)
+
+
+
